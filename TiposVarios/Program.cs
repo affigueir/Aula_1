@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace TiposVarios
 {
@@ -6,6 +7,11 @@ namespace TiposVarios
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
+            char heart = '\u2665';
+            char arrows = '\u21C4';
+
             int num1 = 12;
             float num2 = 6.8f;
             bool depression = 5 > 3;
@@ -15,6 +21,7 @@ namespace TiposVarios
 
             Console.WriteLine("{0} {1} | {2}" , num1 , num2 , depression);
             System.Console.WriteLine($"{numBig} {numSmall} | {num3}");
+            System.Console.WriteLine($"Heart = {heart} Arrows = {arrows}");
         }
     }
 }
